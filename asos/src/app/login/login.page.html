@@ -1,0 +1,29 @@
+
+<ion-header style="background-color: #ffda79" [translucent]="true">
+  <ion-toolbar >
+    <ion-title >
+      Login
+    </ion-title> 
+    <ion-button fill="solid" color="dark" size="small" style="background-color: #ffda79" slot="end" [routerLink]="['/register']">
+      REGISTER
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content  >
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" required></ion-input >
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input >
+  </ion-item>
+
+  <ion-button fill="clear" color="dark" expand="full" shape="round" [ngStyle]=" !isSelected&&{'background-color':'#ffda79'}" (click)="login(user)" [routerLink]="['/about']" >
+    Login
+  </ion-button>
+
+</ion-content>
+

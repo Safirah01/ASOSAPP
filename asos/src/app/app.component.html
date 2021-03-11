@@ -1,0 +1,29 @@
+<ion-app>
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="ion-text-center">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-item [routerLink]="['/faq']">  
+          <ion-icon name="bookmark"></ion-icon>
+        <ion-label>FAQ</ion-label>
+      </ion-item>
+        <ion-item [routerLink]="['/food']">  
+          <ion-icon name="pizza"></ion-icon>
+          <ion-label>Food</ion-label>
+        </ion-item>
+
+        
+        <ion-item [routerLink]="['/logout']">  
+          <ion-icon name="unlock"></ion-icon>
+          <ion-label>Logout</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

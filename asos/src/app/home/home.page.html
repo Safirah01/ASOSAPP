@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-left">
+        Al-Shifan Restaurant
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide class="title">
+      
+    <h2 class="ion-text-center">Welcome To Our Restaurant!</h2>
+    <img src="../assets/nasigoreng.jpeg">
+    </ion-slide>
+  
+    <ion-slide>
+      <h2 class="ion-text-center">Favourite Food Around Corner!</h2>
+      <img src="../assets/nasi kandar.jpg">
+    </ion-slide>
+  
+    <ion-slide>
+      <h2 class="ion-text-center">Makes You Smile With Our Services!!</h2>
+      <img src="../assets/maggigoreng.jpg">
+    </ion-slide>
+    
+    </ion-slides>
+    <ion-button expand="block" color="dark" [routerLink]="['/login']" fill="clear">Get Started <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+
+</ion-content>
+
+

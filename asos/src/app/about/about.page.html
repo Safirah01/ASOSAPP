@@ -1,0 +1,83 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-left">
+        Al-Shifan Restaurant
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button color="dark" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  
+</ion-header>
+<ion-content>
+   
+  
+  <div class="title ion-padding">
+    <h2>Featured Category</h2>
+  </div>
+  <ion-slides pager="true" [options]="slideOpts">
+
+
+    <ion-slide class="title">
+      <ion-button expand="full" color="dark" [routerLink]="['/nasi']" >Nasi</ion-button>
+    <img src="../assets/nasilemak.jpeg">
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-button expand="full" color="dark" [routerLink]="['/minum']" >Minum</ion-button>
+      <img src="../assets/miloais.jpg">
+    </ion-slide>
+  
+    <ion-slide>
+      <ion-button expand="full" color="dark" [routerLink]="['/udang']" >Udang</ion-button>
+      <img src="../assets/udangtepung.jpg">
+    </ion-slide>
+    
+    </ion-slides>
+
+    
+  <div class="title ion-padding">
+    <h2>About Us</h2>
+  </div>
+    <ion-card class="ion-text-center">
+      <img src='../../assets/alshifan.jpeg'>
+      <p>  Were Located on Taman Impian Murni Kajang were near to Dewan Seri Cempaka MPKJ.  </p>
+      <p>  Open Hours 6am - 12am only</p>
+    </ion-card>
+    
+
+    
+  <div class="title ion-padding">
+    <h2>Feedback</h2>
+    
+    <ion-card class="ion-text-center">
+    <h2>  Azbin </h2>
+    <img src='../../assets/pelbagaifood.png'>
+    <p>  Pelbagai Makanan ada dan sungguh sedap </p>
+  </ion-card>
+
+  <ion-card class="ion-text-center">
+    <h2>  Ariffin </h2>
+    <img src='../../assets/lazat.jpg'>
+    <p>  Roti Canai Sedap dan kuah jugak sedap </p>
+  </ion-card>
+
+  <ion-card class="ion-text-center">
+    <h2>  Abu </h2>
+    <img src='../../assets/licin.jpg'>
+    <p>  Licin Pinggan Saya. Anda Bagaimana? </p>
+  </ion-card>
+
+
+  <ion-card class="ion-text-center">
+    <h2>  Ali </h2>
+    <img src='../../assets/bawak.jpg'>
+    <p> Selalu Bawa Family Saya disini </p>
+  </ion-card>
+
+  </div>
+
+
+
+  
+</ion-content>
